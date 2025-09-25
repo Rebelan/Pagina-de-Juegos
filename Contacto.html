@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>¡Contáctanos!</title>
+        <link rel="stylesheet" href="Estilos/General.css">
+        <link rel="stylesheet" href="Estilos/UltimosLanzamientos.css">
+        <link rel="stylesheet" href="Estilos/formulario.css">
+    </head>
+    <body>
+        <div id="pagina">
+            <div class="cabecera">
+                <a href="Principal.html"><img src="Multimedia/Icono.png" class="kirby"></a>
+                <h1>Formulario de Contacto</h1>
+                <!-- Checkbox oculto para controlar el menú -->
+                <input type="checkbox" id="MenuFuera" class="DespliegueMenu">
+
+                <!-- Imagen que actúa como el botón de menú  -->
+                <label for="MenuFuera" class="IconoMenu">
+                    <img src="Multimedia/menu.png" alt="Mostrar Menú">
+                </label>
+
+                <!-- Menú de navegación -->
+                <nav class="menu">
+                    <ul>
+                        <li><a href="UltimosLanzamientos.html">Ultimos Lanzamientos</a></li>
+                        <li><a href="Spacemarine2.html">Warhammer Spacemarine 2</a></li>
+                        <li><a href="DragonBallSZ.html">Dragon Ball: Sparking Zero!</a></li>
+                        <li><a href="HelldiversII.html">Helldivers II</a></li>
+                        <li><a href="Wukong.html">Blac Myth: Wukong</a></li>
+                        <li><a href="Contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="Formulario">
+                <table>
+                    <tr>
+                        <td>
+                            <form action="">
+                                <p>Nombre: <input type="text" name="nombre" size="30" placeholder="Ponga su nombre" required></p>
+                                <p>Apellidos:
+                                    <input type="text" name="apellidos" size="70" placeholder="Escriba sus dos apellidos">
+                                </p>
+                                <textarea name="texto" rows="4" cols="40" placeholder="Introduzca la información que crea que puede interesarnos"></textarea>  
+                                <p>Correo: <input type="email" name="nombre" size="30" placeholder="algo@hotmail.es/gmail.com" required></p>
+                                <button type="submit">
+                                        Enviar
+                                  </button>
+                            </form>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+    </body>
+</html>
