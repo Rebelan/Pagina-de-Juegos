@@ -1,0 +1,28 @@
+.Formulario table {
+    margin: 0 auto; /* Asegura el centrado horizontal */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombras para un diseño más estético */
+}
+
+button {
+    background-color: #a91562; /* Color verde para el botón */
+    color: white;
+
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+p{
+    color: rgb(255, 255, 255);
+    text-shadow: 
+    2px 2px 0 black,  
+   -2px 2px 0 black, 
+    2px -2px 0 black, 
+   -2px -2px 0 black, 
+    2px 0 0 black,  
+   -2px 0 0 black,    
+    0 2px 0 black,   
+    0 -2px 0 black--
+}

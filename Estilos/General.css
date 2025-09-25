@@ -1,0 +1,103 @@
+body{
+    background-image: url(./Multimedia/fondo.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+ 
+.kirby{
+    position: fixed; /* Fija la imagen en la pantalla */
+    top: 10px; /* Distancia desde la parte superior de la pantalla */
+    right: 10px; /* Distancia desde el lado derecho de la pantalla */
+    width: 100px; /* Ajusta el tamaño del icono a lo que prefieras */
+    height: auto; /* Mantiene la proporción de la imagen */
+    z-index: 1000; /* Asegura que el icono esté encima de otros elementos */
+
+    /*Ahora voy a hacer la animación de la imágen*/
+
+    animation: rotar 5s linear infinite;
+}
+@keyframes rotar{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+/* Oculta el checkbox para que no sea visible en la página */
+.DespliegueMenu {
+    display: none;
+}
+
+/* Estilos para la imagen que actúa como el botón del menú */
+.IconoMenu {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.IconoMenu img {
+    width: 60px; /* Tamaño del icono de menú */
+    height: auto;
+}
+
+/* Estilos para el menú de navegación */
+.menu {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Oculta el menú fuera de la pantalla */
+    width: 200px;
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    background-color: #c51515e5;
+    padding-top: 60px; /* Da espacio para el contenido */
+    transition: left 0.3s ease; /* Suaviza la transición */
+    z-index: 999;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    margin-bottom: 10px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    display: block;
+}
+
+/* Mostrar el menú cuando el checkbox está marcado */
+.DespliegueMenu:checked + .IconoMenu + .menu {
+    left: 0; /* Mueve el menú a la vista */
+}
+.texto h1{
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+    text-shadow:  0 0 1em rgb(255, 0, 0), 0 0 0.2em rgb(255, 0, 0);
+}
+.textazo{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+    text-shadow:  0 0 1em rgb(255, 0, 0), 0 0 0.2em rgb(255, 0, 0);
+}

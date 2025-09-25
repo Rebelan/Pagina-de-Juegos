@@ -1,0 +1,71 @@
+.cabecera h1{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    
+    /*Ahora se pone sombra a la letra*/
+     text-shadow: 
+        2px 2px 0 red,  
+       -2px 2px 0 red, 
+        2px -2px 0 red, 
+       -2px -2px 0 red, 
+        2px 0 0 red,  
+       -2px 0 0 red,    
+        0 2px 0 red,   
+        0 -2px 0 red
+}
+#cuerpo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura del viewport */
+    padding: 20px; /* Espaciado alrededor de la tabla */
+}
+table {
+    border-collapse: separate; /* Para que los márgenes entre celdas sean visibles */
+    border-spacing: 10px; /* Espaciado entre celdas */
+    background-color: #7f529fa5; /* Fondo de la tabla */
+    border: 2px solid #ffffff; /* Borde general de la tabla */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle relieve */
+    padding: 10px; /* Espaciado interno de la tabla */
+    
+    color: rgb(255, 255, 255);
+    text-shadow: 
+    2px 2px 0 black,  
+   -2px 2px 0 black, 
+    2px -2px 0 black, 
+   -2px -2px 0 black, 
+    2px 0 0 black,  
+   -2px 0 0 black,    
+    0 2px 0 black,   
+    0 -2px 0 black
+}
+td {
+    background-color: #6b7a87a0; /* Fondo claro para las celdas */
+    border: 1px solid #ccc; /* Bordes claros entre las celdas */
+    padding: 10px; /* Espaciado interno en cada celda */
+    text-align: center; /* Centrar contenido dentro de las celdas */
+}
+
+td:hover{
+    background-color: #a01313b4;
+}
+td h1{
+    text-align: center;
+    color: rgb(97, 0, 166);
+    font-size: 25px;
+    
+    /*Ahora se pone sombra a la letra*/
+     text-shadow: 
+        2px 2px 0 black,  
+       -2px 2px 0 black, 
+        2px -2px 0 black, 
+       -2px -2px 0 black, 
+        2px 0 0 black,  
+       -2px 0 0 black,    
+        0 2px 0 black,   
+        0 -2px 0 black
+}
+td p{
+    text-align: justify;
+}
